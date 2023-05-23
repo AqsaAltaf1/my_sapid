@@ -1,0 +1,19 @@
+<div class='container col-md-6 mx-auto shadow p-3 mb-5 bg-body rounded mt-3'>
+  <h3>Show Here</h3>
+  <div class='view'>
+    <div>
+      <ul class='list1'><li><b>FullName:</b></li><hr>
+        <li><b>UserName:</b></li><hr>
+      </ul>
+    </div>
+
+    <div>
+      <ul class='list2'><li><%= @user.Full_Name %></li><hr>
+        <li><%= @user.Username %></li><hr>
+      <ul>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_admin_space_user_path(@user) %> |
+<%= link_to 'Back', admin_space_users_path %>

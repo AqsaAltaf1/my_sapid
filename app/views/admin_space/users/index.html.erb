@@ -1,0 +1,19 @@
+
+<h1>index</h1>
+
+<table>
+  <tr>
+    <th>Full Name</th>
+    <th>User name</th>
+    <th></th>
+  </tr>
+
+  <% @user.each do |user| %>
+    <tr>
+      <td><%= user.Full_Name %></td>
+      <td><%= user.Username %></td>
+      <td><%= link_to 'Show', admin_space_user_path(user) %></td>
+      <td><%= link_to 'Edit', edit_admin_space_user_path(user) %></td>
+    </tr>
+  <% end %>
+</table>
